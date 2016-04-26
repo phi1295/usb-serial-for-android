@@ -97,7 +97,7 @@ public class AdaptSerialDriver implements UsbSerialDriver {
                 Log.d(TAG, "Control endpoint direction: " + mControlEndpoint.getDirection());
 */
                 Log.d(TAG, "Claiming data interface.");
-                mDataInterface = mDevice.getInterface(0);
+                mDataInterface = mDevice.getInterface(2);
                 Log.d(TAG, "data iface=" + mDataInterface);
                 // class should be USB_CLASS_CDC_DATA
 
